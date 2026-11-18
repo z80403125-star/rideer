@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#081426">
+  <title>Проверь свои знания! — Собственность и экономика</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="quiz-shell">
+    <div class="topline"><span class="topline-mark" aria-hidden="true">◆</span> Учебная викторина</div>
+    <section class="card" aria-labelledby="page-title">
+      <div class="intro-view" id="intro-view">
+        <p class="eyebrow">Экономика · колледж </p>
+        <h1 id="page-title">Проверь свои знания!</h1>
+        <p class="intro">Собственность и социально-экономический строй: 20 вопросов о формах собственности, экономических системах и их особенностях.</p>
+      </div>
+
+      <div class="quiz-content" id="quiz-content" hidden>
+        <div class="progress-info">
+          <span id="progress-label">Вопрос <strong>1</strong> из 20</span>
+          <span class="score-pill" id="score-label">Баллы: 0</span>
+        </div>
+        <div class="progress-track" role="progressbar" aria-label="Прогресс викторины" aria-valuemin="0" aria-valuemax="20" aria-valuenow="0">
+          <div class="progress-fill" id="progress-fill"></div>
+        </div>
+        <div class="question-block" id="question-block">
+          <p class="question-number" id="question-number">Вопрос 01</p>
+          <h2 id="question-text"></h2>
+          <fieldset class="answers" id="answers" aria-label="Варианты ответа"></fieldset>
+          <p class="feedback" id="feedback" aria-live="polite"></p>
+          <div class="actions">
+            <button class="primary-button" id="next-button" type="button" disabled>
+              Следующий вопрос <span aria-hidden="true">→</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="result" id="result" hidden aria-live="polite">
+        <div class="result-icon" aria-hidden="true">✦</div>
+        <p class="eyebrow">Викторина завершена</p>
+        <h2 id="result-heading">Ваш результат</h2>
+        <p class="result-score" id="result-score">0/20</p>
+        <p class="result-grade" id="result-grade"></p>
+        <p class="result-detail" id="result-detail"></p>
+        <div class="actions">
+          <button class="primary-button" id="restart-button" type="button">Пройти заново <span aria-hidden="true">↻</span></button>
+        </div>
+      </div>
+    </section>
+    <p class="footer-note">Выберите один ответ — после каждого выбора вы увидите результат.</p>
+  </main>
+</body>
+</html>
